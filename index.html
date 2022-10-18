@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="b1Box">
+            <h1>Registration Form</h1>
+            <form id="fo">
+                <table>
+                    <tr>
+                        <td>
+							<strong>Full Name</strong></td>
+                        <td class="name"><input class="name" type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+							<strong>Email</strong>
+						</td>
+                        <td class="email"><input class="email" type="email" name="email" id="email"></td>
+                    </tr>
+					<tr>
+                        <td>
+							<strong>Password</strong>
+						</td>
+                        <td class="pwd"><input class="pwd" type="password" name="password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td>
+							<strong>Phone Number</strong></td>
+                        <td class="Number"><input class="Number" type="text" name="phn" id="phn"></td>
+                    </tr>
+                    <tr>
+                        <td>
+							<strong>Image</strong>
+						</td>
+                        <td class="img"><input class="img" type="text" name="photo" id="photo"></td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td><Strong>
+							Gender
+						</Strong></td>
+                        <td class="a c h"><span><input type="radio" class="ma" name="gender" id="Male" value="Male">Male</span><span><input class="ma" type="radio" name="gender" id="Female" value="Female">Female</span></td>
+                    </tr>
+                    <tr rowspan="3">
+                        <td><Strong>Skills</Strong></td>
+                        <td class="a c h">
+                            <span><input type="checkbox" name="skills" class="j" id="java" value="Java">Java </span>
+                            <span><input class="j" type="checkbox" name="skills" id="C" value="C">C </span>
+                            <span><input class="j" type="checkbox" name="skills" value="Python" id="Python">Python </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="a"><input class="e b" type="button" onclick="fun()" value="Enroll"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="a"><input class="e r" type="reset" value="Clear"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="b2Box" id="c">
+            <h1>Enrolled Students</h1>
+            <div class="s" id="s">
+
+            </div> 
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
